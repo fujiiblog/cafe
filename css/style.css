@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Yusei+Magic&family=Zen+Maru+Gothic:wght@300&display=swap');
+
+body{
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.wrap{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    height: 4.8rem;
+}
+
+.logo{
+    width: 100%;
+    margin-top: 0;
+}
+
+h1 img{
+    margin: 0.5rem 0 0 1rem;
+    width: 11rem;
+}
+
+#banner{
+    margin-top: -165px;
+    height: 800px;
+    display: flex;/*Flexibl box設定*/
+    align-items: center;/*縦方向中央*/
+    justify-content: center;/*横方向中央*/
+}
+
+.pengin{
+    color:white;
+    text-shadow: 1px 2px 1px black;
+}
+
+.body_text{
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: 0 2rem 0 2rem;
+}
+
+#our_work{
+    padding: 1.5rem;
+    background-color: rgba(82, 80, 80, 0.082);
+}
+
+#our_work h2{
+    margin-top: -0.3rem;
+}
+
+#our_work h3{
+    text-align: center;
+    margin: auto;
+}
+
+.work_title{
+    text-align: left;
+    margin: 0 0 2rem 2rem;
+}
+
+#contact p{
+    margin: 1rem;
+}
+
+.index{
+    margin-top: 1.5rem;
+    padding:1.5rem;
+    background-color: #83B5DE;
+    color: white;
+}
+.index h2{
+    margin-top: -0.3rem;
+}
+
+form{
+    margin: 0 1rem 0 1rem;
+    padding: 0.5rem;
+}
+
+#contact{
+    margin-top: 1.5rem;
+    padding:1.5rem;
+}
+
+footer{
+    text-align: center;
+    height: 3rem;
+    margin-top: 5rem;
+    padding: 1rem 1rem;
+    background-color:#83B5DE;
+    color: white;
+}
+
+
+/* 全体にCSS */
+
+h2{
+    text-align: center;
+    margin: 3rem 0 2.5rem 0;
+}
+
+p{
+    line-height: 1rem;
+    margin: 1rem 2rem 1.5rem 2rem;
+}
+
+h3{
+    text-align: center;
+    margin: 3rem 1rem 2.5rem 1rem;
+}
+
+h4{
+    margin: 1rem 1rem 2rem 1rem;
+    padding: 0.5rem;
+}
+
+
+img{
+    width: 100%;
+}
+
+/* medium  ここから　タブレット　768px 以上=================================== */
+
+@media (min-width: 768px) {
+    h1 img{
+        margin: 0rem 0 0 2rem;
+        width: 14rem;
+    }
+    #banner h2{
+        font-size: xx-large;
+    }
+    #services{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+    .our_services{
+    margin: 2rem 0 2rem 0;
+    width: 40%;
+}
+    .left_side{
+    margin: 2rem 0 3rem -8rem;
+    width: 40%;
+}
+    #outline{
+    margin: auto;
+    margin-top: 5rem;
+    width: 80%;
+    }
+    .flex_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    .item{
+        width: 40%;
+    }
+    .work_title{
+        width: 40%;
+    }
+}
+
+/* large　PC　1024px 以上=================================== */
+
+@media (min-width: 1024px) {
+    .flex_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+        .item{
+            width: 30%;
+        }
+        .work_title{
+            width: 30%;
+        }
+    .index{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .textarea1{
+        width: 40%;
+    }
+    .room{
+        width: 40%;
+    }
+    #contact{
+        margin-top: -15rem;
+        margin-bottom: -15rem;
+        padding:20rem;
+    }
+}
